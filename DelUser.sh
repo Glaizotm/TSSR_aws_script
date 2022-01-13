@@ -12,4 +12,3 @@ do
     aws iam delete-access-key --user-name $user --access-key-id $keyId
     aws iam delete-user --user-name $user 
 done
-
