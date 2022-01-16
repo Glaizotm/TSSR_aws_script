@@ -1,6 +1,8 @@
 #!/bin/bash
 
 fileList=$1
+profile="wf3"
+group="TSSR_1068"
 for line in $(cat $fileList)
 do
 
@@ -11,14 +13,14 @@ do
     keyId=$(grep KeyId $credential |cut -d: -f2 |sed "s/\ \"//g" |sed "s/\",//g")  
 
     #suppressier de l'utilisateur du groupe
-    aws iam remove-user-from-group --group-name GroupeTest --user-name $user
+    aws iam --profile $profile remove-user-from-group --group-name $group --user-name $user
     # suppresssion de l'acces key  
-    aws iam delete-access-key --user-name $user --access-key-id $keyId
+    aws iam --profile $profile delete-access-key --user-name $user --access-key-id $keyId
     
     #suppression du login profile
-    aws iam delete-login-profile --user-name $user
+    aws iam --profile $profile delete-login-profile --user-name $user
     # suppression de l'utilisateur
-    aws iam delete-user --user-name $user 
+    aws iam --profile $profile delete-user --user-name $user 
 
 
 
