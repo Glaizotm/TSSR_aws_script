@@ -1,10 +1,10 @@
 #!/bin/bash
 
 
-profile="wf3"
 fileList=$1
+profile="wf3"
 pass="#MerciWf3!"
-group="TSSR_1068"
+
 for line in $(cat $fileList)
 do
 
