@@ -14,15 +14,5 @@ do
 
     #suppressier de l'utilisateur du groupe
     aws iam --profile $profile remove-user-from-group --group-name $group --user-name $user
-    # suppresssion de l'acces key  
-    aws iam --profile $profile delete-access-key --user-name $user --access-key-id $keyId
-    
-    #suppression du login profile
-    aws iam --profile $profile delete-login-profile --user-name $user
-    # suppression de l'utilisateur
-    aws iam --profile $profile delete-user --user-name $user 
-
-
-
 
 done

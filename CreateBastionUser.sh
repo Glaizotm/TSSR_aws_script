@@ -9,7 +9,7 @@
 
 clef=$2
 fileList=$1
-ipBastion="35.180.18.117"
+ipBastion="35.180.119.199"
 
 
 for line in $(cat $fileList)

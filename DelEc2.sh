@@ -1,6 +1,6 @@
 #!/bin/bash
 
-profile="'wf3"
+profile="tssr1068"
 ec2tags=$1
 listeFile="listeInstance"
 

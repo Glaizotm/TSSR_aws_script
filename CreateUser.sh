@@ -1,9 +1,9 @@
 #!/bin/bash
 
-
 fileList=$1
-profile="wf3"
-pass="#MerciWf3!"
+profile="tssr1068"
+pass="TSSRt2louse4ever!#"
+group="TSSR_1068"
 
 for line in $(cat $fileList)
 do
@@ -38,6 +38,8 @@ login : $user
 Passwd : $pass
 AccessKey : $keyId
 SecretKey : $secret
+
+https://954912771850.signin.aws.amazon.com/console
 
 EOF
 
